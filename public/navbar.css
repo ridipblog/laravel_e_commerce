@@ -1,0 +1,175 @@
+.main_head_div {
+    width: 100%;
+    /* background-image: url("./images/home_1.jpg"); */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/home_1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    align-content: start;
+    padding-bottom: 30px;
+}
+
+.main_nav_div {
+    width: 100%;
+    background-image: linear-gradient(rgba(20, 97, 142, 0.5), rgba(20, 97, 142, 0.5));
+    padding: 20px 0px;
+}
+
+.nav_div {
+    justify-content: space-around;
+}
+
+.nav_div_1 {
+    width: 20%;
+}
+
+.nav_div_1 h1 {
+    color: white;
+    /* font-family: 'Source Code Pro', monospace; */
+}
+
+.nav_div_2 {
+    width: 70%;
+}
+
+.nav_div_2 a {
+    font-size: 15px;
+    font-family: 'Source Code Pro', monospace;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.nav_div_3 {
+    width: 10%;
+}
+
+.nav_div_3 a {
+    font-size: 15px;
+    font-family: 'Source Code Pro', monospace;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.nav_div_2 a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width .3s;
+}
+
+.nav_div_2 a:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+.nav_div_3 i {
+    font-size: 22px;
+}
+
+
+
+
+#side_bar {
+    font-size: 22px;
+    display: none;
+    font-family: 'Source Code Pro', monospace;
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.header_text_div {
+    width: 100%;
+    justify-content: start;
+    margin: 20px 0px;
+}
+
+.header_text {
+    width: 40%;
+    flex-direction: column;
+    flex-flow: column;
+}
+
+.header_text h1 {
+    width: 90%;
+    text-align: left;
+    font-size: 30px;
+    font-family: 'Source Code Pro', monospace;
+    color: white;
+}
+
+.header_text p {
+    font-size: 20px;
+    width: 90%;
+    text-align: left;
+    font-family: 'Source Code Pro', monospace;
+    color: white;
+}
+
+.headee_text_btn {
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.headee_text_btn a {
+    font-size: 18px;
+    padding: 6px 30px;
+    font-family: 'Source Code Pro', monospace;
+    color: white;
+    text-decoration: none;
+    background: #223540;
+}
+
+.headee_text_btn a:last-child {
+    background: transparent;
+    border: 1px solid white;
+}
+
+.side_nav {
+    display: none;
+    width: 55%;
+    top: 0;
+    right: 0;
+    overflow: scroll;
+    height: 100vh;
+    position: fixed;
+    z-index: 99;
+    background: #101726;
+    align-content: start;
+}
+
+.side_nav a {
+    color: WHITE;
+    margin: 10px 0px;
+    padding: 10px 5px;
+    text-decoration: none;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 13px;
+    background: transparent;
+    border: 1px solid white;
+    width: 90%;
+    font-weight: normal;
+    transition: 0.3s;
+}
+
+.side_nav a:hover {
+    background: #7E8289;
+}
+
+#side_nav_close {
+    background: transparent;
+    font-size: 30px;
+    width: 90%;
+    cursor: pointer;
+    text-align: right;
+    border: none;
+    outline: none;
+    color: white;
+}
